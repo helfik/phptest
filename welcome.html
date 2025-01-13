@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Martindale</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <style>
+            body { font-family: Georgia }
+            li { margin-bottom: 10px; font-size: 0.9em }
+        </style>
+    </head>
+    <body>
+        <div style="width: 60%; text-align: justify">
+            <h2>
+                Welcome to Martindale. 
+            </h2>
+            <p>
+                The following PHP exercise will test your knowledge of making RESTful API calls along with connecting to a database to fetch and stored in a relational database.
+            </p>
+            <p>
+                For the purpose of this exercise, you are provided with a sample registration form. Your task is the POST the data from this registration form to
+                submit page. The submit page will make use of a predefined APIStorage API function to store the data of the form into a relation in a database.
+            </p>
+            <p>
+                Upon successful data entry, the API will return an insert ID to identify the last inserted record. You are then required to redirect from the submit page to
+                the data retrieval page. On this page, you will open a connection to the MySQL database with the credentials provided and use the insert ID provided during insert
+                to pull the record information and display in a simple tabular format.
+            </p>
+            <p>
+                Steps to complete this exercise:
+            </p>
+            <ol>
+                <li>
+                    Verify the Input fields in the "index.php" form.
+                </li>
+                <li>
+                    Modify the "submit.php" page to receive the data from "index.php". The form method should be POST.
+                </li>
+                <li>
+                    Perform the necessary server side validation, such as the no numbers in the names, correct e-mail address format, date of birth NOT in the future, ZIP code 5 digits, etc.
+                </li>
+                <li>
+                    POST the data to the API endpoint (provided in submit.php). This should be a simple POST. You may use the PHP cURL library.
+                </li>
+                <li>
+                    Receive and decode the response from the API. The response returned from the API is json encoded.
+                </li>
+                <li>
+                    Redirect to "success.php" page.
+                </li>
+                <li>
+                    Create a connection to the database and fetch the information for the newly inserted record.
+                </li>
+                <li>
+                    Display the data in a simple HTML table.
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
